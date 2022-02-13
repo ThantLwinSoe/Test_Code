@@ -1,26 +1,47 @@
-public abstract class Animal {
+abstract class Animal {
 
 	abstract void feed(String food);
 
-	void greet() {
+	private final void greet() {
 		System.out.println("Hello Java.");
 	}
 }
 
 class Monkey extends Animal {
 
+	void feed(String food) {
+
+		System.out.println("Oishi Kwe Kwe!");
+	}
+
+
 }
 
-class Elephant extends Animal {
+abstract class Elephant extends Animal {
 
+	abstract void wash();
+
+}
+
+
+class AsiaElephant extends Elephant {
+
+	void feed(String food) {
+		System.out.println("Yes I Like this food.");
+		System.out.println("Mor");
+	}
+
+	void wash() {
+		System.out.println("Yes I love Water!!!");
+	}
 }
 
 
 
 
-public class Zoo {
+class Zoo {
 
-	Animal [] animals = new animals[10];
+	Animal [] animals = new Animal[10];
 
 	boolean add(Animal animals) {
 
