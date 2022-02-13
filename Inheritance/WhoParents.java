@@ -36,3 +36,10 @@ public class ChildThree extends ChildTwo {
 		 super.greet();
 	} 
 }
+
+public class ChildFour {
+
+	void greet(String name) {
+		System.out.println("Hello I'm Java.");
+	}
+}
