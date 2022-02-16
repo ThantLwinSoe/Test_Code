@@ -24,7 +24,7 @@ public class PrepairEncap {
 		
 		return ou.get();
 	}
-	private String [] get() {    // also use public modifier same encap
+	private String [] get() {    // can also use public modifier same encap
 
 
 		return array;
