@@ -2,6 +2,9 @@ public class GenericMethod {
 
 	public static void main(String [] args) {
 
+		// it is not object
+		// it return Object
+		// Just method
 		var obj = doJob("HEllo", 1000);
 		obj.show();
 
